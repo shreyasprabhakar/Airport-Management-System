@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.newuserController">
+   <children>
+      <ImageView fitHeight="477.0" fitWidth="682.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/airport.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="197.0" layoutY="19.0" prefHeight="405.0" prefWidth="286.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffbc" height="405.0" layoutY="-1.0" stroke="#8f0303" strokeType="INSIDE" width="287.0" />
+            <Label layoutX="29.0" layoutY="47.0" text="Name" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="80.0" text="Age" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="120.0" text="Date Of Birth" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="193.0" prefHeight="17.0" prefWidth="66.0" text="Username" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="236.0" text="Password" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="279.0" text="Phone Number" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="314.0" text="Email id" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf1" layoutX="103.0" layoutY="43.0" />
+            <TextField fx:id="tf2" layoutX="103.0" layoutY="76.0" />
+            <TextField fx:id="tf3" layoutX="103.0" layoutY="116.0" />
+            <TextField fx:id="tf4" layoutX="103.0" layoutY="190.0" />
+            <TextField fx:id="tf6" layoutX="103.0" layoutY="275.0" />
+            <TextField fx:id="tf7" layoutX="103.0" layoutY="310.0" />
+            <PasswordField fx:id="tf5" layoutX="103.0" layoutY="232.0" promptText="password" />
+            <Button fx:id="btn1" layoutX="114.0" layoutY="351.0" mnemonicParsing="false" style="-fx-background-color: #8f0303;" text="Submit" textFill="WHITE" />
+            <Label layoutX="26.0" layoutY="152.0" text="Gender" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="14.0" text="New User" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="146.0" layoutY="152.0" mnemonicParsing="false" text="F" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="103.0" layoutY="152.0" mnemonicParsing="false" text="M" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="182.0" layoutY="152.0" mnemonicParsing="false" text="Others" textFill="#8f0303">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+      <Button fx:id="back" layoutX="626.0" layoutY="401.0" mnemonicParsing="false" onAction="#onClick" style="-fx-background-color: #8f0303;" text="Back" textFill="WHITE" />
+      
+   </children>
+</AnchorPane>

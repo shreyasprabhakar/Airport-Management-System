@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+   <children>
+      <ImageView fitHeight="442.0" fitWidth="662.0" layoutX="-6.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/airport.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffbc" height="405.0" layoutX="185.0" layoutY="8.0" stroke="#8f0303" strokeType="INSIDE" width="287.0" />
+      <Label layoutX="214.0" layoutY="119.0" text="Name" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="202.0" text="Age" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="51.0" text="ticket id" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="89.0" prefHeight="17.0" prefWidth="66.0" text="Username" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="288.0" text="Password" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="161.0" text="Phone Number" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="245.0" text="Email id" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_name" layoutX="294.0" layoutY="115.0" />
+      <TextField fx:id="tf_age" layoutX="291.0" layoutY="198.0" />
+      <TextField fx:id="tf_ticket_id" layoutX="291.0" layoutY="47.0" />
+      <TextField fx:id="tf_new_username" layoutX="294.0" layoutY="85.0" />
+      <TextField fx:id="tf_phonenumber" layoutX="291.0" layoutY="157.0" />
+      <TextField fx:id="tf_email" layoutX="291.0" layoutY="241.0" />
+      <Button fx:id="btn_submit_newuser" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Back" textFill="#8f0303" underline="true" />
+      <PasswordField fx:id="tf_new_password" layoutX="294.0" layoutY="284.0" promptText="password" />
+      <Label layoutX="210.0" layoutY="323.0" text="Gender" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="24.0" text="New User" textFill="#8f0303">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="298.0" layoutY="362.0" mnemonicParsing="false" onAction="#onclick" style="-fx-background-color: #8f0303; -fx-cursor: hand;" text="Submit" textFill="WHITE" />
+      <TextField fx:id="tf_gender" layoutX="294.0" layoutY="319.0" promptText="M / F / Others" />
+   </children>
+</AnchorPane>
